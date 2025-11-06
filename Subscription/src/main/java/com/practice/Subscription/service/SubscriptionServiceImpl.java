@@ -3,6 +3,7 @@ package com.practice.Subscription.service;
 import com.practice.Subscription.dto.CustomerResponseDTO;
 import com.practice.Subscription.enums.PlanType;
 import com.practice.Subscription.dto.SubscriptionDTO;
+import com.practice.Subscription.events.SubscriptionEvent;
 import com.practice.Subscription.exception.ResourceNotFoundException;
 import com.practice.Subscription.model.Subscription;
 import com.practice.Subscription.repo.SubscriptionRepository;
@@ -23,6 +24,8 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Autowired
     private SubscriptionRepository subscriptionRepository;
+    @Autowired
+    private KafkaProducerService kafkaProducerService;
 
     @Override
     public SubscriptionDTO createSubscription(SubscriptionDTO subscriptionDTO) {
@@ -62,13 +65,27 @@ public class SubscriptionServiceImpl implements SubscriptionService {
         subscription.setEndDate(endDate);
         subscription.setPrice(String.valueOf(planType.getPrice())); // encrypts automatically
 
+        // ✅ Save subscription to DB
         Subscription saved = subscriptionRepository.save(subscription);
 
         log.info("[CREATE] Subscription created successfully with id={} for customer={} valid till={}",
                 saved.getId(), saved.getCustomerId(), saved.getEndDate());
 
+        // ✅ Send Kafka event after successful save
+        SubscriptionEvent event = new SubscriptionEvent(
+                saved.getId(),
+                Long.parseLong(saved.getCustomerId()),
+                saved.getPlanType().name(),
+                "CREATED"
+        );
+        kafkaProducerService.sendSubscriptionEvent(event);
+
+        log.info("[KAFKA] Subscription event published for id={} customerId={} plan={}",
+                saved.getId(), saved.getCustomerId(), saved.getPlanType());
+
         return mapToDTO(saved);
     }
+
 
     @Override
     public SubscriptionDTO getSubscriptionById(Long id) {
