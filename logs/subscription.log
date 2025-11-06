@@ -3156,3 +3156,219 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.4.0.jar:9.4.0]
 	... 59 common frames omitted
 
+2025-11-06T20:40:47.549+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] c.p.S.SubscriptionApplication            : Starting SubscriptionApplication using Java 23.0.2 with PID 20452 (C:\project_preparation\Subscription\target\classes started by Dina Reddy in C:\project_preparation)
+2025-11-06T20:40:47.549+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] c.p.S.SubscriptionApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-11-06T20:40:47.720+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-06T20:40:50.929+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06T20:40:51.212+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 270 ms. Found 1 JPA repository interface.
+2025-11-06T20:40:52.789+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-06T20:40:52.827+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-06T20:40:52.827+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-06T20:40:52.925+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-06T20:40:52.926+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5206 ms
+2025-11-06T20:40:53.654+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06T20:40:53.764+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-06T20:40:53.826+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-06T20:40:54.393+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06T20:40:54.433+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-06T20:40:54.726+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a122511
+2025-11-06T20:40:54.726+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-06T20:40:54.789+05:30  WARN [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06T20:40:54.805+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-06T20:40:55.869+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06T20:40:55.948+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06T20:40:56.547+05:30  WARN [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06T20:40:56.988+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 6 endpoints beneath base path '/actuator'
+2025-11-06T20:40:57.035+05:30  WARN [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: df2b4d15-c666-4966-a3d6-8fab3b4c9249
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-06T20:40:57.035+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-06T20:40:58.083+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-06T20:40:58.240+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-11-06T20:40:58.263+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [restartedMain] c.p.S.SubscriptionApplication            : Started SubscriptionApplication in 11.856 seconds (process running for 13.51)
+2025-11-06T20:42:23.049+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [http-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06T20:42:23.050+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-06T20:42:23.055+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-11-06T20:43:40.201+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Request received for customerId=1 with planType=MONTHLY
+2025-11-06T20:43:40.400+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] org.hibernate.SQL                        : select s1_0.id,s1_0.customer_id,s1_0.end_date,s1_0.plan_type,s1_0.price,s1_0.start_date,s1_0.status from subscriptions s1_0
+2025-11-06T20:43:40.491+05:30  WARN [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] com.practice.Subscription.util.AESUtil   : [DECRYPT WARN] Failed to decrypt '1': Input byte[] should at least have 2 bytes for base64 bytes. Returning original value.
+2025-11-06T20:43:40.492+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] '1' -> '1'
+2025-11-06T20:43:40.497+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:43:40.509+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:43:40.509+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:43:40.529+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Customer 1 already has active plan until 2026-01-04. Scheduling next plan from 2026-01-05
+2025-11-06T20:43:40.556+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '1' -> 'jtFlyWQUCUzNbrWLnFU+cg=='
+2025-11-06T20:43:40.560+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '499.0' -> 'Ap2wRFTD6jyZZ2D2biWnDA=='
+2025-11-06T20:43:40.561+05:30 DEBUG [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] org.hibernate.SQL                        : insert into subscriptions (customer_id,end_date,plan_type,price,start_date,status) values (?,?,?,?,?,?)
+2025-11-06T20:43:40.626+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Subscription created successfully with id=6 for customer=1 valid till=2026-02-05
+2025-11-06T20:43:40.627+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.KafkaProducerService       : 📤 Sending event to Kafka topic subscription-events: SubscriptionEvent(subscriptionId=6, customerId=1, planName=MONTHLY, action=CREATED)
+2025-11-06T20:43:40.706+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = subscription-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-11-06T20:43:40.797+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-11-06T20:43:40.831+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=subscription-producer-1] Instantiated an idempotent producer.
+2025-11-06T20:43:40.918+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-11-06T20:43:40.919+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-11-06T20:43:40.919+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1762442020915
+2025-11-06T20:43:42.128+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [kafka-producer-network-thread | subscription-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=subscription-producer-1] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+2025-11-06T20:43:42.170+05:30  INFO [subscription,traceId=690cbb24d44b38295357e3d921bb0e3c,spanId=2ffd522cd2aa586d] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [KAFKA] Subscription event published for id=6 customerId=1 plan=MONTHLY
+2025-11-06T20:43:42.495+05:30  INFO [subscription,traceId=,spanId=] 20452 --- [subscription] [kafka-producer-network-thread | subscription-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=subscription-producer-1] ProducerId set to 0 with epoch 0
+2025-11-06T20:47:17.169+05:30  INFO [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Request received for customerId=1 with planType=MONTHLY
+2025-11-06T20:47:17.173+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] org.hibernate.SQL                        : select s1_0.id,s1_0.customer_id,s1_0.end_date,s1_0.plan_type,s1_0.price,s1_0.start_date,s1_0.status from subscriptions s1_0
+2025-11-06T20:47:17.175+05:30  WARN [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] com.practice.Subscription.util.AESUtil   : [DECRYPT WARN] Failed to decrypt '1': Input byte[] should at least have 2 bytes for base64 bytes. Returning original value.
+2025-11-06T20:47:17.176+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB READ] '1' -> '1'
+2025-11-06T20:47:17.176+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:17.177+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:47:17.178+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:17.179+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:47:17.179+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:17.184+05:30  INFO [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Customer 1 already has active plan until 2026-02-05. Scheduling next plan from 2026-02-06
+2025-11-06T20:47:17.186+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '1' -> 'jtFlyWQUCUzNbrWLnFU+cg=='
+2025-11-06T20:47:17.186+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '499.0' -> 'Ap2wRFTD6jyZZ2D2biWnDA=='
+2025-11-06T20:47:17.187+05:30 DEBUG [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] org.hibernate.SQL                        : insert into subscriptions (customer_id,end_date,plan_type,price,start_date,status) values (?,?,?,?,?,?)
+2025-11-06T20:47:17.202+05:30  INFO [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Subscription created successfully with id=7 for customer=1 valid till=2026-03-06
+2025-11-06T20:47:17.202+05:30  INFO [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.service.KafkaProducerService       : 📤 Sending event to Kafka topic subscription-events: SubscriptionEvent(subscriptionId=7, customerId=1, planName=MONTHLY, action=CREATED)
+2025-11-06T20:47:17.204+05:30  INFO [subscription,traceId=690cbbfd2845e1fa444a049fb099a497,spanId=55c3238e3ea716b6] 20452 --- [subscription] [http-nio-8081-exec-8] c.p.S.service.SubscriptionServiceImpl    : [KAFKA] Subscription event published for id=7 customerId=1 plan=MONTHLY
+2025-11-06T20:47:31.713+05:30  INFO [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Request received for customerId=1 with planType=MONTHLY
+2025-11-06T20:47:31.719+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] org.hibernate.SQL                        : select s1_0.id,s1_0.customer_id,s1_0.end_date,s1_0.plan_type,s1_0.price,s1_0.start_date,s1_0.status from subscriptions s1_0
+2025-11-06T20:47:31.721+05:30  WARN [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] com.practice.Subscription.util.AESUtil   : [DECRYPT WARN] Failed to decrypt '1': Input byte[] should at least have 2 bytes for base64 bytes. Returning original value.
+2025-11-06T20:47:31.722+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] '1' -> '1'
+2025-11-06T20:47:31.723+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:31.724+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:47:31.725+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:31.726+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:47:31.727+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:31.729+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:47:31.730+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:47:31.733+05:30  INFO [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Customer 1 already has active plan until 2026-03-06. Scheduling next plan from 2026-03-07
+2025-11-06T20:47:31.735+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '1' -> 'jtFlyWQUCUzNbrWLnFU+cg=='
+2025-11-06T20:47:31.735+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '499.0' -> 'Ap2wRFTD6jyZZ2D2biWnDA=='
+2025-11-06T20:47:31.735+05:30 DEBUG [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] org.hibernate.SQL                        : insert into subscriptions (customer_id,end_date,plan_type,price,start_date,status) values (?,?,?,?,?,?)
+2025-11-06T20:47:31.748+05:30  INFO [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Subscription created successfully with id=8 for customer=1 valid till=2026-04-07
+2025-11-06T20:47:31.748+05:30  INFO [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.service.KafkaProducerService       : 📤 Sending event to Kafka topic subscription-events: SubscriptionEvent(subscriptionId=8, customerId=1, planName=MONTHLY, action=CREATED)
+2025-11-06T20:47:31.749+05:30  INFO [subscription,traceId=690cbc0b4d42d80cfc2e3f84e53ebaee,spanId=5f0f788b4c5116e4] 20452 --- [subscription] [http-nio-8081-exec-9] c.p.S.service.SubscriptionServiceImpl    : [KAFKA] Subscription event published for id=8 customerId=1 plan=MONTHLY
+2025-11-06T20:53:37.854+05:30  INFO [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Request received for customerId=1 with planType=MONTHLY
+2025-11-06T20:53:37.901+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] org.hibernate.SQL                        : select s1_0.id,s1_0.customer_id,s1_0.end_date,s1_0.plan_type,s1_0.price,s1_0.start_date,s1_0.status from subscriptions s1_0
+2025-11-06T20:53:37.901+05:30  WARN [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] com.practice.Subscription.util.AESUtil   : [DECRYPT WARN] Failed to decrypt '1': Input byte[] should at least have 2 bytes for base64 bytes. Returning original value.
+2025-11-06T20:53:37.901+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] '1' -> '1'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'jtFlyWQUCUzNbrWLnFU+cg==' -> '1'
+2025-11-06T20:53:37.917+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB READ] 'Ap2wRFTD6jyZZ2D2biWnDA==' -> '499.0'
+2025-11-06T20:53:37.924+05:30  INFO [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Customer 1 already has active plan until 2026-04-07. Scheduling next plan from 2026-04-08
+2025-11-06T20:53:37.925+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '1' -> 'jtFlyWQUCUzNbrWLnFU+cg=='
+2025-11-06T20:53:37.925+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.convertor.EncryptionConverter      : [DB SAVE] '499.0' -> 'Ap2wRFTD6jyZZ2D2biWnDA=='
+2025-11-06T20:53:37.925+05:30 DEBUG [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] org.hibernate.SQL                        : insert into subscriptions (customer_id,end_date,plan_type,price,start_date,status) values (?,?,?,?,?,?)
+2025-11-06T20:53:37.949+05:30  INFO [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [CREATE] Subscription created successfully with id=9 for customer=1 valid till=2026-05-08
+2025-11-06T20:53:37.949+05:30  INFO [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.KafkaProducerService       : 📤 Sending event to Kafka topic subscription-events: SubscriptionEvent(subscriptionId=9, customerId=1, planName=MONTHLY, action=CREATED)
+2025-11-06T20:53:38.000+05:30  INFO [subscription,traceId=690cbd7990bc42832db1602890ec5cdb,spanId=be278bc210c9302c] 20452 --- [subscription] [http-nio-8081-exec-2] c.p.S.service.SubscriptionServiceImpl    : [KAFKA] Subscription event published for id=9 customerId=1 plan=MONTHLY
+2025-11-06T22:17:55.807+05:30  WARN [subscription,traceId=,spanId=] 20452 --- [subscription] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m59s382ms414µs100ns).
