@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class KafkaProducerService
+public class KafkaProducerService{
 
-    private final KafkaTemplate<String, Object> kafkaTemplate;
-    private static final String TOPIC = "subscription-events";
+private final KafkaTemplate<String, Object> kafkaTemplate;
+private static final String TOPIC = "subscription-events";
 
-    public void sendSubscriptionEvent(SubscriptionEvent event) {
-        log.info("📤 Sending event to Kafka topic {}: {}", TOPIC, event);
-        kafkaTemplate.send(TOPIC, event);
-    }
+public void sendSubscriptionEvent(SubscriptionEvent event) {
+    log.info("📤 Sending event to Kafka topic {}: {}", TOPIC, event);
+    kafkaTemplate.send(TOPIC, event);
+}
 }
